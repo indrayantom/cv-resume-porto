@@ -1,0 +1,284 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+	\item\small{
+		{#1 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\classesList}[4]{
+	\item\small{
+		{#1 #2 #3 #4 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & \textbf{\small #2} \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+	\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textit{\small#1} & \textit{\small #2} \\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+	\item
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+		\small#1 & \textbf{\small #2}\\
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+	\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+	\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+	
+	%----------HEADING----------
+	% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+	%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+	% \end{tabular*}
+	
+	\begin{center}
+		{\Huge \scshape Indra Yanto} %\\ %\vspace{1pt}
+	%Jl. Cisitu Indah V No. 8 Bandung, Indonesia 
+	\\ \vspace{2pt}
+		\small \href{https://indrayantom.github.io/indrapedia/}{\raisebox{-0.2\height}\faGlobe\ Personal Website} ~ \href{mailto:iyanto201199@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  iyanto201199@gmail.com} ~ \raisebox{-0.1\height}\faPhone (+62)823-6486-3157 \\
+		\href{https://www.linkedin.com/in/indrayantom/}{\raisebox{-0.2\height}\faLinkedin\ linkedin.com/in/indrayantom}  ~
+		\href{https://github.com/indrayantom}{\raisebox{-0.2\height}\faGithub\ github.com/indrayantom}
+		\vspace{-8pt}
+	\end{center} 
+	\vspace{7pt}
+	Result-driven individual with strong capacity for learning and Bachelor's in Aerospace and Mechanical Engineering. Reliable communication skills, both oral and written with advanced knowledge of scripting languages and ability to work in a cross-functional environment. Seeking to utilize hands-on analytics experience as an Entry Level Business Analyst. Possesses strong analytical and problem-solving skills with solid engineering and statistical background. 
+	
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart
+	\resumeSubheading
+	{dibimbing.id}{October 2021 -- March 2022}
+	{Non- formal Education of Data Science and Analyst}{Online}
+		\resumeItemListStart
+	\resumeItem{Composed numerous projects, related to machine learning problems (classification, regression, and clustering), data analysis, data visualization or dashboard making, and SQL queries, based on Kaggle or free datasets.}
+	\resumeItem{Graduated with the highest grade among the class members, and won the "Most Valuable Person" and "Best Final Project" awards.}
+	\resumeItemListEnd
+	\resumeSubheading
+	{Institut Teknologi Bandung}{August 2017 -- October 2021}
+	{Bachelor of Science in Aerospace Engineering}{Bandung, Indonesia}
+	\resumeItemListStart
+	\resumeItem{Graduated with a cumulative GPA  of 3.87/4.00. }
+	\resumeItem{The Awardee of Samosir Regency Scholarship 2020.}
+	\resumeItem{Dean's List of Tutor Asrama ITB 2020.}
+	\resumeItem{The Winner of DIY Soap-Box Car Race Project 2017 held by FTMD ITB.}
+	\resumeItemListEnd
+	\resumeSubHeadingListEnd
+	
+	%------RELEVANT COURSEWORK-------
+%	\section{Relevant Coursework}
+	%\resumeSubHeadingListStart
+%	\begin{multicols}{4}
+%		\begin{itemize}[itemsep=-5pt, parsep=3pt]
+%			\item\small Data Structures
+%			\item Software Methodology
+%			\item Algorithms Analysis
+%			\item Database Management
+%			\item Artificial Intelligence
+%			\item Internet Technology
+%			\item Systems Programming
+%			\item Computer Architecture
+%		\end{itemize}
+%	\end{multicols}
+%	\vspace*{2.0\multicolsep}
+	%\resumeSubHeadingListEnd
+	
+	
+	%-----------EXPERIENCE-----------
+	\section{Professional Experiences}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{PT. Aero Terra Indonesia (AeroTerrascan)}{February 2021 -- May 2021}
+	{UAV Engineer Intern}{Bandung, Indonesia}
+	\resumeItemListStart
+	\resumeItem{Designed precise mathematical model of Pindad SS2-V2 recoil absorption system with spring and multi-orifices shock absorber using MATLAB and Simulink.}
+	\resumeItem{Obtained clear specifications about the recoil absorption system based on the mathematical model so that it can absorb Pindad SS2's recoil energy efficiently and good to be assembled with certain UAV.}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{UPT Asrama ITB}{July 2018 -- July 2020}
+	{Student Counselor -- Calculus Tutor -- Lecturer Assistant}{Bandung, Indonesia}
+	\resumeItemListStart
+	\resumeItem{Collaborated with the lecturers to assist, help and encourage freshman students in ITB dormitory in order to help them through their college first-year journey.}
+	\resumeItem{Guided and supervised a group of 8-12 freshman ITB students as their dorm parent.}
+	\resumeItem{Helped first-year ITB dorm students understand their calculus subject better at college by conducting calculus tutorial classes and Tryouts.}
+	\resumeItem{Assisted the lecturer in dormitory special subject at ITB, namely Pendidikan Karakter.}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	\vspace{-16pt}
+	
+	%-----------EXPERIENCE-----------
+	\section{Organizational Experiences}
+	\resumeSubHeadingListStart
+	
+	\resumeSubheading
+	{Keluarga Mahasiswa Teknik Penerbangan (KMPN) ITB}{August 2018 -- October 2021}
+	{Regular Member -- Staff of REKON Division}{Bandung, Indonesia}
+	\resumeItemListStart
+	\resumeItem{Contributed to the success of KMPN's major event SONIC 2019 (Study of Organization and Creativity) as Head of Logistics Division}
+	\resumeItem{Participated in KMPN's Graduation Ceremony as Staff of Logisitics Division in July 2019.}
+	\resumeItem{Enlighted other members of KMPN about the latest news and innovations related to the aviation world by conducting seminars and writing Medium articles.}
+	\resumeItemListEnd
+	
+	\resumeSubheading
+	{Perkumpulan Mahasiswa Penerbangan Indonesia (PN INDO - Bandung)}{August 2020 -- August 2021}
+	{Staff of Academic Division}{Bandung, Indonesia}
+	\resumeItemListStart
+	\resumeItem{Collaborated with the team to the success of PN-INDO events such as seminars, company visits and scientific writing competition called AeroEvent.}
+	\resumeItem{Collected free-access files such as scientific journals, books, software and videos related to aviation from all universities so they can be easily accessed by all aviation students in Indonesia through Google Drive platform called Aerofolder.}
+	\resumeItemListEnd
+	
+	\resumeSubHeadingListEnd
+	\vspace{-16pt}
+	
+	%-----------PROJECTS-----------
+%	\section{Organizational Experiences}
+%	\vspace{-5pt}
+%	\resumeSubHeadingListStart
+%	\resumeProjectHeading
+%	{\textbf{Keluarga Mahasiswa Teknik Penerbangan (KMPN) ITB} %$|$ \emph{Python, Selenium, Google Cloud Console}
+%	}{August 2018 -- October 2021}
+%	\resumeItemListStart
+%	\resumeItem{Contributed to the success of KMPN's major event SONIC 2019 %(Study of Organization and Creativity) as Head of Logistics Division. }
+%	\resumeItem{Participated in KMPN's Graduation Ceremony as Staff of %Logisitics Division in July 2019.}
+%	\resumeItem{Enlighted other members of KMPN about the latest news and innovations related to the aviation world by conducting seminars and writing Medium articles, as PWK staff from 2018 - 2019.}
+%	\resumeItemListEnd
+%	\vspace{-13pt}
+%	\resumeProjectHeading
+%	{\textbf{Perkumpulan Mahasiswa Penerbangan Indonesia (PN INDO - Bandung)} %$|$ %\emph{Java, Android Studio}
+%	}{August 2020 -- August 2021}
+%	\resumeItemListStart
+%	\resumeItem{Collaborated with the team to the success of PN-INDO events such as seminars, company visits and scientific writing competition called AeroEvent.}
+%	\resumeItem{Collected free-access files such as scientific journal, books, softwares and videos related to the aviation from all universites so that it can be freely accessed by all aviation students in Indonesia through Google Drive platform called Aerofolder, as Staff of Academic Division. }
+%	\resumeItemListEnd 
+%	\vspace{-13pt}
+%	\resumeProjectHeading
+%	{\textbf{Rumah Ilmu Keluarga Sangkuriang (RIKSA)} $|$ \emph{Java, Eclipse, JavaFX}}{October 2020}
+%	\resumeItemListStart
+%	\resumeItem{Designed a sample banking transaction system using Java to simulate the common functions of using a bank account.}
+%	\resumeItem{Used JavaFX to create a GUI that supports actions such as creating an account, deposit, withdraw, list all acounts, etc.}
+%	\resumeItem{Implemented object-oriented programming practices such as inheritance to create different account types and databases.}
+%	\resumeItemListEnd 
+%	\resumeSubHeadingListEnd
+%	\vspace{-15pt}
+	
+	
+	%
+	%-----------PROGRAMMING SKILLS-----------
+	\section{Languages and Technical Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{
+				\textbf{Languages}{ : Native Bahasa, professional English, and intermediate German. } \\
+				\textbf{Proficient}{ : MATLAB, Python, R (RStudio), Ms. Office, and Google Data Studio.} \\
+				\textbf{Intermediate}{ : Tableau,  SQL, HTML, and CorelDRAW.} \\
+		}}
+	\end{itemize}
+	\vspace{-16pt}
+	
+	
+	%-----------INVOLVEMENT---------------
+%	\section{Leadership / Extracurricular}
+%	\resumeSubHeadingListStart
+%	\resumeSubheading{Fraternity}{Spring 2020 -- Present}{President}{University Name}
+%	\resumeItemListStart
+%	\resumeItem{Achieved a 4 star fraternity ranking by the Office of Fraternity and Sorority Affairs (highest possible ranking).}
+%	\resumeItem{Managed executive board of 5 members and ran weekly meetings to oversee progress in essential parts of the chapter.}
+%	\resumeItem{Led chapter of 30+ members to work towards goals that improve and promote community service, academics, and unity.}
+%	\resumeItemListEnd
+	
+%	\resumeSubHeadingListEnd
+	
+	
+\end{document}
